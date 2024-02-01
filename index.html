@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto HTML e JS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500&family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css" /> <!--buscando o css-->
+
+</head>
+<body>
+    <h1>Validação</h1>
+    <p>Insira os valores abaixo:</p> <!--instruções ao usuário-->
+    <div class="container">
+        <form id="form-valid">
+            <input type="number" id="valorA" placeholder="Primeiro valor" />    
+            <input type="number" id="valorB" placeholder="Segundo valor" />  
+            <button onclick="validarForm()" id="submit-button" type="submit" >Enviar</button>
+        </form>
+
+        <p class="success-message">Formulário válido! B é maior que A.</p>
+        <p class="error-message">Formulário inválido! B precisa ser maior que A.</p>
+    </div>
+    <script src="./main.js"></script> <!--buscando o js-->
+</body>
+</html>
